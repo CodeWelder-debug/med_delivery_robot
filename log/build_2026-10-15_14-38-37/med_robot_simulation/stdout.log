@@ -1,0 +1,39 @@
+running develop
+running egg_info
+creating med_robot_simulation.egg-info
+writing med_robot_simulation.egg-info/PKG-INFO
+writing dependency_links to med_robot_simulation.egg-info/dependency_links.txt
+writing entry points to med_robot_simulation.egg-info/entry_points.txt
+writing requirements to med_robot_simulation.egg-info/requires.txt
+writing top-level names to med_robot_simulation.egg-info/top_level.txt
+writing manifest file 'med_robot_simulation.egg-info/SOURCES.txt'
+reading manifest file 'med_robot_simulation.egg-info/SOURCES.txt'
+writing manifest file 'med_robot_simulation.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/krishna/miniproject/install/med_robot_simulation/lib/python3.10/site-packages/med-robot-simulation.egg-link (link to .)
+Installing camera_node script to /home/krishna/miniproject/install/med_robot_simulation/lib/med_robot_simulation
+Installing dispatch_server script to /home/krishna/miniproject/install/med_robot_simulation/lib/med_robot_simulation
+Installing lidar_processor script to /home/krishna/miniproject/install/med_robot_simulation/lib/med_robot_simulation
+Installing move_object script to /home/krishna/miniproject/install/med_robot_simulation/lib/med_robot_simulation
+
+Installed /home/krishna/miniproject/build/med_robot_simulation
+running symlink_data
+creating /home/krishna/miniproject/install/med_robot_simulation/share/ament_index
+creating /home/krishna/miniproject/install/med_robot_simulation/share/ament_index/resource_index
+creating /home/krishna/miniproject/install/med_robot_simulation/share/ament_index/resource_index/packages
+symbolically linking /home/krishna/miniproject/build/med_robot_simulation/resource/med_robot_simulation -> /home/krishna/miniproject/install/med_robot_simulation/share/ament_index/resource_index/packages
+symbolically linking /home/krishna/miniproject/build/med_robot_simulation/package.xml -> /home/krishna/miniproject/install/med_robot_simulation/share/med_robot_simulation
+creating /home/krishna/miniproject/install/med_robot_simulation/share/med_robot_simulation/launch
+symbolically linking /home/krishna/miniproject/build/med_robot_simulation/launch/nav.launch.py -> /home/krishna/miniproject/install/med_robot_simulation/share/med_robot_simulation/launch
+symbolically linking /home/krishna/miniproject/build/med_robot_simulation/launch/simulation.launch.py -> /home/krishna/miniproject/install/med_robot_simulation/share/med_robot_simulation/launch
+creating /home/krishna/miniproject/install/med_robot_simulation/share/med_robot_simulation/urdf
+symbolically linking /home/krishna/miniproject/build/med_robot_simulation/urdf/med_delivery_robot.urdf -> /home/krishna/miniproject/install/med_robot_simulation/share/med_robot_simulation/urdf
+creating /home/krishna/miniproject/install/med_robot_simulation/share/med_robot_simulation/worlds
+symbolically linking /home/krishna/miniproject/build/med_robot_simulation/worlds/hospital_world.sdf -> /home/krishna/miniproject/install/med_robot_simulation/share/med_robot_simulation/worlds
+creating /home/krishna/miniproject/install/med_robot_simulation/share/med_robot_simulation/config
+symbolically linking /home/krishna/miniproject/build/med_robot_simulation/config/nav2_params.yaml -> /home/krishna/miniproject/install/med_robot_simulation/share/med_robot_simulation/config
+symbolically linking /home/krishna/miniproject/build/med_robot_simulation/config/ros_gz_bridge.yaml -> /home/krishna/miniproject/install/med_robot_simulation/share/med_robot_simulation/config
+creating /home/krishna/miniproject/install/med_robot_simulation/share/med_robot_simulation/meshes
+symbolically linking /home/krishna/miniproject/build/med_robot_simulation/meshes/hospital.stl -> /home/krishna/miniproject/install/med_robot_simulation/share/med_robot_simulation/meshes
+symbolically linking /home/krishna/miniproject/build/med_robot_simulation/meshes/hospital.mtl -> /home/krishna/miniproject/install/med_robot_simulation/share/med_robot_simulation/meshes
+symbolically linking /home/krishna/miniproject/build/med_robot_simulation/meshes/hospital.obj -> /home/krishna/miniproject/install/med_robot_simulation/share/med_robot_simulation/meshes

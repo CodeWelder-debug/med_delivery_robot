@@ -1,0 +1,57 @@
+[0.467s] Invoking command in '/home/krishna/miniproject/build/med_robot_simulation': PYTHONPATH=/home/krishna/miniproject/build/med_robot_simulation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/krishna/miniproject/install/med_robot_simulation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/krishna/miniproject/build/med_robot_simulation/build
+[0.648s] running develop
+[0.760s] Removing /home/krishna/miniproject/install/med_robot_simulation/lib/python3.10/site-packages/med-robot-simulation.egg-link (link to .)
+[0.779s] Invoked command in '/home/krishna/miniproject/build/med_robot_simulation' returned '0': PYTHONPATH=/home/krishna/miniproject/build/med_robot_simulation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/krishna/miniproject/install/med_robot_simulation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/krishna/miniproject/build/med_robot_simulation/build
+[0.780s] Invoking command in '/home/krishna/miniproject/src/med_robot_simulation': PYTHONPATH=/home/krishna/miniproject/build/med_robot_simulation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/krishna/miniproject/install/med_robot_simulation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/med_robot_simulation build --build-base /home/krishna/miniproject/build/med_robot_simulation/build install --record /home/krishna/miniproject/build/med_robot_simulation/install.log --install-scripts $base/lib/med_robot_simulation --single-version-externally-managed install_data --force
+[0.954s] running egg_info
+[0.954s] writing ../../build/med_robot_simulation/med_robot_simulation.egg-info/PKG-INFO
+[0.954s] writing dependency_links to ../../build/med_robot_simulation/med_robot_simulation.egg-info/dependency_links.txt
+[0.954s] writing entry points to ../../build/med_robot_simulation/med_robot_simulation.egg-info/entry_points.txt
+[0.954s] writing requirements to ../../build/med_robot_simulation/med_robot_simulation.egg-info/requires.txt
+[0.954s] writing top-level names to ../../build/med_robot_simulation/med_robot_simulation.egg-info/top_level.txt
+[0.956s] reading manifest file '../../build/med_robot_simulation/med_robot_simulation.egg-info/SOURCES.txt'
+[0.956s] writing manifest file '../../build/med_robot_simulation/med_robot_simulation.egg-info/SOURCES.txt'
+[0.956s] running build
+[0.956s] running build_py
+[0.956s] creating /home/krishna/miniproject/build/med_robot_simulation/build
+[0.956s] creating /home/krishna/miniproject/build/med_robot_simulation/build/lib
+[0.956s] creating /home/krishna/miniproject/build/med_robot_simulation/build/lib/med_robot_simulation
+[0.956s] copying med_robot_simulation/move_object.py -> /home/krishna/miniproject/build/med_robot_simulation/build/lib/med_robot_simulation
+[0.956s] copying med_robot_simulation/camera_node.py -> /home/krishna/miniproject/build/med_robot_simulation/build/lib/med_robot_simulation
+[0.956s] copying med_robot_simulation/__init__.py -> /home/krishna/miniproject/build/med_robot_simulation/build/lib/med_robot_simulation
+[0.956s] copying med_robot_simulation/lidar_processor.py -> /home/krishna/miniproject/build/med_robot_simulation/build/lib/med_robot_simulation
+[0.957s] copying med_robot_simulation/dispatch_server.py -> /home/krishna/miniproject/build/med_robot_simulation/build/lib/med_robot_simulation
+[0.957s] running install
+[0.957s] running install_lib
+[0.957s] creating /home/krishna/miniproject/install/med_robot_simulation/lib/python3.10/site-packages/med_robot_simulation
+[0.957s] copying /home/krishna/miniproject/build/med_robot_simulation/build/lib/med_robot_simulation/move_object.py -> /home/krishna/miniproject/install/med_robot_simulation/lib/python3.10/site-packages/med_robot_simulation
+[0.957s] copying /home/krishna/miniproject/build/med_robot_simulation/build/lib/med_robot_simulation/camera_node.py -> /home/krishna/miniproject/install/med_robot_simulation/lib/python3.10/site-packages/med_robot_simulation
+[0.957s] copying /home/krishna/miniproject/build/med_robot_simulation/build/lib/med_robot_simulation/__init__.py -> /home/krishna/miniproject/install/med_robot_simulation/lib/python3.10/site-packages/med_robot_simulation
+[0.957s] copying /home/krishna/miniproject/build/med_robot_simulation/build/lib/med_robot_simulation/lidar_processor.py -> /home/krishna/miniproject/install/med_robot_simulation/lib/python3.10/site-packages/med_robot_simulation
+[0.957s] copying /home/krishna/miniproject/build/med_robot_simulation/build/lib/med_robot_simulation/dispatch_server.py -> /home/krishna/miniproject/install/med_robot_simulation/lib/python3.10/site-packages/med_robot_simulation
+[0.958s] byte-compiling /home/krishna/miniproject/install/med_robot_simulation/lib/python3.10/site-packages/med_robot_simulation/move_object.py to move_object.cpython-310.pyc
+[0.958s] byte-compiling /home/krishna/miniproject/install/med_robot_simulation/lib/python3.10/site-packages/med_robot_simulation/camera_node.py to camera_node.cpython-310.pyc
+[0.958s] byte-compiling /home/krishna/miniproject/install/med_robot_simulation/lib/python3.10/site-packages/med_robot_simulation/__init__.py to __init__.cpython-310.pyc
+[0.959s] byte-compiling /home/krishna/miniproject/install/med_robot_simulation/lib/python3.10/site-packages/med_robot_simulation/lidar_processor.py to lidar_processor.cpython-310.pyc
+[0.959s] byte-compiling /home/krishna/miniproject/install/med_robot_simulation/lib/python3.10/site-packages/med_robot_simulation/dispatch_server.py to dispatch_server.cpython-310.pyc
+[0.959s] running install_data
+[0.960s] copying resource/med_robot_simulation -> /home/krishna/miniproject/install/med_robot_simulation/share/ament_index/resource_index/packages
+[0.960s] copying package.xml -> /home/krishna/miniproject/install/med_robot_simulation/share/med_robot_simulation
+[0.960s] copying launch/nav.launch.py -> /home/krishna/miniproject/install/med_robot_simulation/share/med_robot_simulation/launch
+[0.960s] copying launch/simulation.launch.py -> /home/krishna/miniproject/install/med_robot_simulation/share/med_robot_simulation/launch
+[0.960s] copying urdf/med_delivery_robot.urdf -> /home/krishna/miniproject/install/med_robot_simulation/share/med_robot_simulation/urdf
+[0.960s] copying worlds/hospital_world.sdf -> /home/krishna/miniproject/install/med_robot_simulation/share/med_robot_simulation/worlds
+[0.960s] copying config/nav2_params.yaml -> /home/krishna/miniproject/install/med_robot_simulation/share/med_robot_simulation/config
+[0.960s] copying config/ros_gz_bridge.yaml -> /home/krishna/miniproject/install/med_robot_simulation/share/med_robot_simulation/config
+[0.960s] copying meshes/hospital.stl -> /home/krishna/miniproject/install/med_robot_simulation/share/med_robot_simulation/meshes
+[0.960s] copying meshes/hospital.mtl -> /home/krishna/miniproject/install/med_robot_simulation/share/med_robot_simulation/meshes
+[0.960s] copying meshes/hospital.obj -> /home/krishna/miniproject/install/med_robot_simulation/share/med_robot_simulation/meshes
+[0.961s] running install_egg_info
+[0.961s] Copying ../../build/med_robot_simulation/med_robot_simulation.egg-info to /home/krishna/miniproject/install/med_robot_simulation/lib/python3.10/site-packages/med_robot_simulation-0.0.0-py3.10.egg-info
+[0.962s] running install_scripts
+[0.977s] Installing camera_node script to /home/krishna/miniproject/install/med_robot_simulation/lib/med_robot_simulation
+[0.977s] Installing dispatch_server script to /home/krishna/miniproject/install/med_robot_simulation/lib/med_robot_simulation
+[0.977s] Installing lidar_processor script to /home/krishna/miniproject/install/med_robot_simulation/lib/med_robot_simulation
+[0.977s] Installing move_object script to /home/krishna/miniproject/install/med_robot_simulation/lib/med_robot_simulation
+[0.977s] writing list of installed files to '/home/krishna/miniproject/build/med_robot_simulation/install.log'
+[0.993s] Invoked command in '/home/krishna/miniproject/src/med_robot_simulation' returned '0': PYTHONPATH=/home/krishna/miniproject/build/med_robot_simulation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/krishna/miniproject/install/med_robot_simulation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/med_robot_simulation build --build-base /home/krishna/miniproject/build/med_robot_simulation/build install --record /home/krishna/miniproject/build/med_robot_simulation/install.log --install-scripts $base/lib/med_robot_simulation --single-version-externally-managed install_data --force

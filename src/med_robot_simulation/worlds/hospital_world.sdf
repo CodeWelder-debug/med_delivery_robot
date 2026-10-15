@@ -1,0 +1,79 @@
+<?xml version="1.0" ?>
+<sdf version="1.8">
+  <world name="hospital_world">
+    
+    <!-- Scene Settings -->
+    <scene>
+      <ambient>0.8 0.8 0.8 1</ambient>
+      <background>0.7 0.7 0.7 1</background>
+      <shadows>false</shadows>
+    </scene>
+
+    <!-- Physics Configuration -->
+    <physics name="1ms" type="ignored">
+      <max_step_size>0.001</max_step_size>
+      <real_time_factor>1.0</real_time_factor>
+    </physics>
+
+    <!-- Required System Plugins for Gazebo Sim -->
+    <plugin filename="gz-sim-physics-system" name="gz::sim::systems::Physics"/>
+    <plugin filename="gz-sim-user-commands-system" name="gz::sim::systems::UserCommands"/>
+    <plugin filename="gz-sim-scene-broadcaster-system" name="gz::sim::systems::SceneBroadcaster"/>
+
+    <!-- NEW: Soft, Shadowless Overhead Light (Illuminates everything evenly) -->
+    <light type="directional" name="overhead_light">
+      <cast_shadows>false</cast_shadows>
+      <pose>0 0 10 0 0 0</pose>
+      <diffuse>0.9 0.9 0.9 1</diffuse>
+      <specular>0.1 0.1 0.1 1</specular>
+      <direction>0 0 -1</direction>
+    </light>
+
+    <!-- Custom Hospital Building Mesh -->
+    <model name="custom_hospital">
+      <static>true</static>
+      <link name="hospital_link">
+        <visual name="visual">
+          <geometry>
+            <mesh>
+              <uri>meshes/hospital.obj</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <mesh>
+              <uri>meshes/hospital.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+    
+    <!-- Static Medical Supply Cart Obstacle -->
+    <model name="medical_cart">
+      <static>true</static>
+      <pose>3.0 1.5 0.0 0 0 0</pose>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.8 0.6 1.0</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.8 0.6 1.0</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.9 0.9 0.9 1</ambient>
+            <diffuse>0.9 0.9 0.9 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+  </world>
+</sdf>

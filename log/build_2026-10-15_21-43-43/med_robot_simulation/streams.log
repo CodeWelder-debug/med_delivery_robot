@@ -1,0 +1,20 @@
+[0.788s] Invoking command in '/home/krishna/miniproject/build/med_robot_simulation': PYTHONPATH=/home/krishna/miniproject/build/med_robot_simulation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/krishna/miniproject/install/med_robot_simulation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/krishna/miniproject/build/med_robot_simulation/build --no-deps symlink_data
+[0.995s] running develop
+[1.111s] running egg_info
+[1.111s] writing med_robot_simulation.egg-info/PKG-INFO
+[1.112s] writing dependency_links to med_robot_simulation.egg-info/dependency_links.txt
+[1.112s] writing entry points to med_robot_simulation.egg-info/entry_points.txt
+[1.112s] writing requirements to med_robot_simulation.egg-info/requires.txt
+[1.112s] writing top-level names to med_robot_simulation.egg-info/top_level.txt
+[1.113s] reading manifest file 'med_robot_simulation.egg-info/SOURCES.txt'
+[1.113s] writing manifest file 'med_robot_simulation.egg-info/SOURCES.txt'
+[1.114s] running build_ext
+[1.115s] Creating /home/krishna/miniproject/install/med_robot_simulation/lib/python3.10/site-packages/med-robot-simulation.egg-link (link to .)
+[1.115s] Installing camera_node script to /home/krishna/miniproject/install/med_robot_simulation/lib/med_robot_simulation
+[1.115s] Installing dispatch_server script to /home/krishna/miniproject/install/med_robot_simulation/lib/med_robot_simulation
+[1.115s] Installing lidar_processor script to /home/krishna/miniproject/install/med_robot_simulation/lib/med_robot_simulation
+[1.115s] Installing move_object script to /home/krishna/miniproject/install/med_robot_simulation/lib/med_robot_simulation
+[1.115s] 
+[1.116s] Installed /home/krishna/miniproject/build/med_robot_simulation
+[1.116s] running symlink_data
+[1.136s] Invoked command in '/home/krishna/miniproject/build/med_robot_simulation' returned '0': PYTHONPATH=/home/krishna/miniproject/build/med_robot_simulation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/krishna/miniproject/install/med_robot_simulation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/krishna/miniproject/build/med_robot_simulation/build --no-deps symlink_data

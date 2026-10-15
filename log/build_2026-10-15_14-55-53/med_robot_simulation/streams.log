@@ -1,0 +1,25 @@
+[0.456s] Invoking command in '/home/krishna/miniproject/src/med_robot_simulation': PYTHONPATH=/home/krishna/miniproject/build/med_robot_simulation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/krishna/miniproject/install/med_robot_simulation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/med_robot_simulation build --build-base /home/krishna/miniproject/build/med_robot_simulation/build install --record /home/krishna/miniproject/build/med_robot_simulation/install.log --install-scripts $base/lib/med_robot_simulation --single-version-externally-managed install_data
+[0.631s] running egg_info
+[0.631s] writing ../../build/med_robot_simulation/med_robot_simulation.egg-info/PKG-INFO
+[0.632s] writing dependency_links to ../../build/med_robot_simulation/med_robot_simulation.egg-info/dependency_links.txt
+[0.632s] writing entry points to ../../build/med_robot_simulation/med_robot_simulation.egg-info/entry_points.txt
+[0.632s] writing requirements to ../../build/med_robot_simulation/med_robot_simulation.egg-info/requires.txt
+[0.632s] writing top-level names to ../../build/med_robot_simulation/med_robot_simulation.egg-info/top_level.txt
+[0.633s] reading manifest file '../../build/med_robot_simulation/med_robot_simulation.egg-info/SOURCES.txt'
+[0.634s] writing manifest file '../../build/med_robot_simulation/med_robot_simulation.egg-info/SOURCES.txt'
+[0.634s] running build
+[0.634s] running build_py
+[0.634s] running install
+[0.635s] running install_lib
+[0.636s] running install_data
+[0.636s] copying config/nav2_params.yaml -> /home/krishna/miniproject/install/med_robot_simulation/share/med_robot_simulation/config
+[0.636s] running install_egg_info
+[0.637s] removing '/home/krishna/miniproject/install/med_robot_simulation/lib/python3.10/site-packages/med_robot_simulation-0.0.0-py3.10.egg-info' (and everything under it)
+[0.638s] Copying ../../build/med_robot_simulation/med_robot_simulation.egg-info to /home/krishna/miniproject/install/med_robot_simulation/lib/python3.10/site-packages/med_robot_simulation-0.0.0-py3.10.egg-info
+[0.638s] running install_scripts
+[0.652s] Installing camera_node script to /home/krishna/miniproject/install/med_robot_simulation/lib/med_robot_simulation
+[0.652s] Installing dispatch_server script to /home/krishna/miniproject/install/med_robot_simulation/lib/med_robot_simulation
+[0.653s] Installing lidar_processor script to /home/krishna/miniproject/install/med_robot_simulation/lib/med_robot_simulation
+[0.653s] Installing move_object script to /home/krishna/miniproject/install/med_robot_simulation/lib/med_robot_simulation
+[0.653s] writing list of installed files to '/home/krishna/miniproject/build/med_robot_simulation/install.log'
+[0.670s] Invoked command in '/home/krishna/miniproject/src/med_robot_simulation' returned '0': PYTHONPATH=/home/krishna/miniproject/build/med_robot_simulation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/krishna/miniproject/install/med_robot_simulation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/med_robot_simulation build --build-base /home/krishna/miniproject/build/med_robot_simulation/build install --record /home/krishna/miniproject/build/med_robot_simulation/install.log --install-scripts $base/lib/med_robot_simulation --single-version-externally-managed install_data

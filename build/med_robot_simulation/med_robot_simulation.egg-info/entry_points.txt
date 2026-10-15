@@ -1,0 +1,6 @@
+[console_scripts]
+camera_node = med_robot_simulation.camera_node:main
+dispatch_server = med_robot_simulation.dispatch_server:main
+lidar_processor = med_robot_simulation.lidar_processor:main
+move_object = med_robot_simulation.move_object:main
+

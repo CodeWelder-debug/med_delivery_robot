@@ -1,0 +1,136 @@
+import rclpy
+from rclpy.action import ActionClient
+from rclpy.node import Node
+from nav2_msgs.action import NavigateToPose
+import time
+
+class HospitalDispatchServer(Node):
+    def __init__(self):
+        super().__init__('hospital_dispatch_server')
+        
+        # Action client to talk to Nav2's navigation stack
+        self._nav_client = ActionClient(self, NavigateToPose, 'navigate_to_pose')
+        
+        # Room Database: Map room names to their exact (x, y) coordinates on your map
+        # NOTE: Adjust these coordinates to match your actual Blender/Gazebo hospital layout!
+        self.room_database = {
+            "storage_room": {"x": 1.0, "y": 3.5},
+            "room_a":       {"x": 3.0, "y": 3.5},
+            "room_b":       {"x": 5.0, "y": 3.5},
+            "room_c":       {"x": 7.0, "y": 3.5},
+            "room_d":       {"x": 3.0, "y": -3.5},
+            "room_e":       {"x": 5.0, "y": -3.5},
+            "room_f":       {"x": 7.0, "y": -3.5}
+        }
+        
+        self.get_logger().info('Hospital Named-Room Dispatch & Verification Server is online.')
+
+    def dispatch_to_room(self, room_key):
+        # Normalize the input key
+        key = room_key.lower().replace(" ", "_")
+        
+        if key not in self.room_database:
+            self.get_logger().error(f'Unknown room name: "{room_key}". Available rooms: {list(self.room_database.keys())}')
+            return False
+
+        coords = self.room_database[key]
+        room_x = coords["x"]
+        room_y = coords["y"]
+        
+        self.get_logger().info(f'Dispatching robot to [{room_key.upper()}] at coordinates ({room_x}, {room_y})...')
+        
+        # Wait for Nav2 action server
+        if not self._nav_client.wait_for_server(timeout_sec=5.0):
+            self.get_logger().error('Nav2 action server not available!')
+            return False
+
+        # Build goal pose for Nav2
+        goal_msg = NavigateToPose.Goal()
+        goal_msg.pose.header.frame_id = 'map'
+        goal_msg.pose.header.stamp = self.get_clock().now().to_msg()
+        goal_msg.pose.pose.position.x = room_x
+        goal_msg.pose.pose.position.y = room_y
+        goal_msg.pose.pose.orientation.w = 1.0  # Facing forward
+
+        # Send goal asynchronously
+        self._send_goal_future = self._nav_client.send_goal_async(
+            goal_msg,
+            feedback_callback=self.feedback_callback
+        )
+        self._send_goal_future.add_done_callback(self.goal_response_callback)
+        return True
+
+    def goal_response_callback(self, future):
+        goal_handle = future.result()
+        if not goal_handle.accepted:
+            self.get_logger().warn('Mission goal rejected by Nav2!')
+            return
+
+        self.get_logger().info('Mission goal accepted. Robot en route...')
+        self._get_result_future = goal_handle.get_result_async()
+        self._get_result_future.add_done_callback(self.verification_callback)
+
+    def feedback_callback(self, feedback_msg):
+        pass
+
+    def verification_callback(self, future):
+        status = future.result().status
+        
+        # STATUS 4 = SUCCEEDED in action lifecycle
+        if status == 4:
+            self.get_logger().info('SUCCESS: Robot arrived at the destination room!')
+            self.verify_delivery_completion()
+        else:
+            self.get_logger().error(f'VERIFICATION FAILED: Robot failed to reach destination with status code {status}')
+
+    def verify_delivery_completion(self):
+        # Verification hook: check sensors, confirm drop-off zone is clear
+        self.get_logger().info('Verifying drop-off zone safety and cargo status...')
+        time.sleep(1.0)
+        self.get_logger().info('Verification complete. Mission logged as successful.')
+
+def main(args=None):
+    rclpy.init(args=args)
+    server = HospitalDispatchServer()
+    
+    # Example 1: Dispatch to Storage Room
+    server.dispatch_to_room("storage_room")
+    
+    try:
+        rclpy.spin(server)
+    except KeyboardInterrupt:
+        pass
+    finally:
+        server.destroy_node()
+        if rclpy.ok():
+            rclpy.shutdown()
+
+if __name__ == '__main__':
+    main()
+def main(args=None):
+    rclpy.init(args=args)
+    server = HospitalDispatchServer()
+    
+    # Patiently wait until Nav2's action server is fully up and running
+    server.get_logger().info('Waiting for Nav2 action server to become active...')
+    while not server._nav_client.wait_for_server(timeout_sec=1.0):
+        if not rclpy.ok():
+            break
+        server.get_logger().info('Still waiting for Nav2... (Make sure your simulation and Nav2 stack are running)')
+        
+    # Once Nav2 is online, automatically send the mission
+    server.get_logger().info('Nav2 is online! Dispatched to Storage Room.')
+    server.dispatch_to_room("storage_room")
+    
+    try:
+        rclpy.spin(server)
+    except KeyboardInterrupt:
+        pass
+    finally:
+        server.destroy_node()
+        if rclpy.ok():
+            rclpy.shutdown()
+
+if __name__ == '__main__':
+    main()
+

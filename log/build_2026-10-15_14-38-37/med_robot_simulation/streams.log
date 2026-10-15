@@ -1,0 +1,41 @@
+[0.645s] Invoking command in '/home/krishna/miniproject/build/med_robot_simulation': PYTHONPATH=/home/krishna/miniproject/build/med_robot_simulation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/krishna/miniproject/install/med_robot_simulation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/krishna/miniproject/build/med_robot_simulation/build --no-deps symlink_data
+[0.824s] running develop
+[0.934s] running egg_info
+[0.934s] creating med_robot_simulation.egg-info
+[0.934s] writing med_robot_simulation.egg-info/PKG-INFO
+[0.934s] writing dependency_links to med_robot_simulation.egg-info/dependency_links.txt
+[0.934s] writing entry points to med_robot_simulation.egg-info/entry_points.txt
+[0.934s] writing requirements to med_robot_simulation.egg-info/requires.txt
+[0.935s] writing top-level names to med_robot_simulation.egg-info/top_level.txt
+[0.935s] writing manifest file 'med_robot_simulation.egg-info/SOURCES.txt'
+[0.936s] reading manifest file 'med_robot_simulation.egg-info/SOURCES.txt'
+[0.936s] writing manifest file 'med_robot_simulation.egg-info/SOURCES.txt'
+[0.937s] running build_ext
+[0.937s] Creating /home/krishna/miniproject/install/med_robot_simulation/lib/python3.10/site-packages/med-robot-simulation.egg-link (link to .)
+[0.938s] Installing camera_node script to /home/krishna/miniproject/install/med_robot_simulation/lib/med_robot_simulation
+[0.938s] Installing dispatch_server script to /home/krishna/miniproject/install/med_robot_simulation/lib/med_robot_simulation
+[0.938s] Installing lidar_processor script to /home/krishna/miniproject/install/med_robot_simulation/lib/med_robot_simulation
+[0.938s] Installing move_object script to /home/krishna/miniproject/install/med_robot_simulation/lib/med_robot_simulation
+[0.938s] 
+[0.938s] Installed /home/krishna/miniproject/build/med_robot_simulation
+[0.938s] running symlink_data
+[0.938s] creating /home/krishna/miniproject/install/med_robot_simulation/share/ament_index
+[0.938s] creating /home/krishna/miniproject/install/med_robot_simulation/share/ament_index/resource_index
+[0.938s] creating /home/krishna/miniproject/install/med_robot_simulation/share/ament_index/resource_index/packages
+[0.938s] symbolically linking /home/krishna/miniproject/build/med_robot_simulation/resource/med_robot_simulation -> /home/krishna/miniproject/install/med_robot_simulation/share/ament_index/resource_index/packages
+[0.938s] symbolically linking /home/krishna/miniproject/build/med_robot_simulation/package.xml -> /home/krishna/miniproject/install/med_robot_simulation/share/med_robot_simulation
+[0.939s] creating /home/krishna/miniproject/install/med_robot_simulation/share/med_robot_simulation/launch
+[0.939s] symbolically linking /home/krishna/miniproject/build/med_robot_simulation/launch/nav.launch.py -> /home/krishna/miniproject/install/med_robot_simulation/share/med_robot_simulation/launch
+[0.939s] symbolically linking /home/krishna/miniproject/build/med_robot_simulation/launch/simulation.launch.py -> /home/krishna/miniproject/install/med_robot_simulation/share/med_robot_simulation/launch
+[0.939s] creating /home/krishna/miniproject/install/med_robot_simulation/share/med_robot_simulation/urdf
+[0.939s] symbolically linking /home/krishna/miniproject/build/med_robot_simulation/urdf/med_delivery_robot.urdf -> /home/krishna/miniproject/install/med_robot_simulation/share/med_robot_simulation/urdf
+[0.939s] creating /home/krishna/miniproject/install/med_robot_simulation/share/med_robot_simulation/worlds
+[0.939s] symbolically linking /home/krishna/miniproject/build/med_robot_simulation/worlds/hospital_world.sdf -> /home/krishna/miniproject/install/med_robot_simulation/share/med_robot_simulation/worlds
+[0.939s] creating /home/krishna/miniproject/install/med_robot_simulation/share/med_robot_simulation/config
+[0.939s] symbolically linking /home/krishna/miniproject/build/med_robot_simulation/config/nav2_params.yaml -> /home/krishna/miniproject/install/med_robot_simulation/share/med_robot_simulation/config
+[0.939s] symbolically linking /home/krishna/miniproject/build/med_robot_simulation/config/ros_gz_bridge.yaml -> /home/krishna/miniproject/install/med_robot_simulation/share/med_robot_simulation/config
+[0.939s] creating /home/krishna/miniproject/install/med_robot_simulation/share/med_robot_simulation/meshes
+[0.939s] symbolically linking /home/krishna/miniproject/build/med_robot_simulation/meshes/hospital.stl -> /home/krishna/miniproject/install/med_robot_simulation/share/med_robot_simulation/meshes
+[0.939s] symbolically linking /home/krishna/miniproject/build/med_robot_simulation/meshes/hospital.mtl -> /home/krishna/miniproject/install/med_robot_simulation/share/med_robot_simulation/meshes
+[0.939s] symbolically linking /home/krishna/miniproject/build/med_robot_simulation/meshes/hospital.obj -> /home/krishna/miniproject/install/med_robot_simulation/share/med_robot_simulation/meshes
+[0.958s] Invoked command in '/home/krishna/miniproject/build/med_robot_simulation' returned '0': PYTHONPATH=/home/krishna/miniproject/build/med_robot_simulation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/krishna/miniproject/install/med_robot_simulation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/krishna/miniproject/build/med_robot_simulation/build --no-deps symlink_data
